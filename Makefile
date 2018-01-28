@@ -14,7 +14,7 @@ $(BLDDIR):
 
 dynamic: $(BLDDIR)
 	$(CC) $(CFLAGS) -shared -fPIC $(SRCDIR)/$(PROJNM).c -o $(BLDDIR)/lib$(PROJNM).so
-	$(CC) $(CFLAGS) -fPIE -L$(BLDDIR) -l$(PROJNM) $(SRCDIR)/$(PROJNM).c -o $(BLDDIR)/$(PROJNM)
+	$(CC) $(CFLAGS) -fPIE -L$(BLDDIR) -l$(PROJNM) $(SRCDIR)/main.c -o $(BLDDIR)/$(PROJNM)
 
 static: $(BLDDIR)
 	$(CC) $(CFLAGS) $(SRCDIR)/{main,$(PROJNM)}.c -o $(BLDDIR)/$(PROJNM)
