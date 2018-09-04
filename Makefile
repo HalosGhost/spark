@@ -4,7 +4,9 @@ CFLAGS = -std=c11 -Weverything -Wno-vla -Werror -ggdb -O0
 SRCDIR = ./src
 BLDDIR = ./dist
 
-.PHONY: clean dynamic static
+.PHONY: all clean dynamic static
+
+all: clean dynamic
 
 clean:
 	@rm -rf -- $(BLDDIR)
