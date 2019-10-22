@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include <inttypes.h>
+#include <stdlib.h>
 
 char *
 spark_char (size_t, const uintmax_t[], char *);

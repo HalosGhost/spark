@@ -1,9 +1,8 @@
-CC = clang
 PROJNM = spark
-CFLAGS = -std=c11 -Weverything -Wno-vla -Werror -ggdb -O0
 SRCDIR = ./src
 BLDDIR = ./dist
 
+include Makerules
 .PHONY: all clean dynamic static
 
 all: clean dynamic

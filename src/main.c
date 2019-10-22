@@ -23,5 +23,6 @@ main (signed argc, char * argv []) {
     spark_char(arglen - 1, data, buffer);
     puts(buffer);
 
+    free(data);
     return EXIT_SUCCESS;
 }
